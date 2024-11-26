@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="contain" id="containbg">
+        <div class="screen">
+            <div class="icon" id="icon">
+                <button id="night"><img src="./icon/moon_symbol_100px.png" alt=""></button>
+                <button id="day"><img src="./icon/sun_100px.png" alt=""></button>
+            </div>
+            <div class="screen-box">
+                <div class="screen-input" id="screen"></div>
+                <div class="screen-result" id="result"></div>
+            </div>
+        </div>
+        <div class="butt" id="buttin">
+            <button class="b-colour" id="clear" onclick="clearScreen()">clear</button>
+            <button class="b-colour" id="dell" onclick="dellOption()">dell</button>
+            <button class="b-colour" id="%" onclick="appendAll('%')">%</button>
+            <button class="colour" id="/" onclick="appendAll('/')">/</button>
+            <button id="7" onclick="appendAll('7')">7</button>
+            <button id="8" onclick="appendAll('8')">8</button>
+            <button id="9" onclick="appendAll('9')">9</button>
+            <button class="colour" id="x" onclick="appendAll('*')">x</button>
+            <button id="4" onclick="appendAll('4')">4</button>
+            <button id="5" onclick="appendAll('5')">5</button>
+            <button id="6" onclick="appendAll('6')">6</button>
+            <button class="colour" id="-" onclick="appendAll('-')">-</button>
+            <button id="1" onclick="appendAll('1')">1</button>
+            <button id="2" onclick="appendAll('2')">2</button>
+            <button id="3" onclick="appendAll('3')">3</button>
+            <button class="colour" id="+" onclick="appendAll('+')">+</button>
+            <button id="00" onclick="appendAll('00')">00</button>
+            <button id="0" onclick="appendAll('0')">0</button>
+            <button id="." onclick="appendAll('.')">.</button>
+            <button class="colour" id="=" onclick="resultDisplay('=')">=</button>
+        </div>
+
+    </div>
+    
+</body>
+<script src="./calculator.js"></script>
+</html>
